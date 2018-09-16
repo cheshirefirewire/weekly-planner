@@ -18,7 +18,7 @@ let renderCalendar = () => {
   };
   for (let i = 0; i < 7; i++) {
     let day = document.createElement('section');
-    for (let j = 1; j <= 24; j += .25) {
+    for (let j = 7; j <= 24; j += .25) {
       let hour = document.createElement('div');
       hour.innerHTML = hourSplitter(j);
       hour.classList.add('hour');

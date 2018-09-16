@@ -20,7 +20,7 @@ var renderCalendar = function renderCalendar() {
   };
   for (var i = 0; i < 7; i++) {
     var day = document.createElement('section');
-    for (var j = 1; j <= 24; j += .25) {
+    for (var j = 7; j <= 24; j += .25) {
       var hour = document.createElement('div');
       hour.innerHTML = hourSplitter(j);
       hour.classList.add('hour');
